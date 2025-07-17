@@ -1,0 +1,115 @@
+@font-face {
+    font-family: AloveraDisplay;
+    src: url('assets/fonts/AloeveraDisplay-Medium.otf');
+}
+
+@font-face {
+  font-family: AloveraDisplayR;
+  src: url('assets/fonts/AloeveraDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: AloveraDisplaySB;
+  src: url('assets/fonts/AloeveraDisplay-SemiBold.otf');
+}
+
+@font-face {
+  font-family: ArialBD;
+  src: url('assets/fonts/arialbd.otf');
+}
+
+@font-face {
+  font-family: Giarek;
+  src: url('assets/fonts/Giarek-Regular.otf');
+}
+
+@font-face {
+  font-family: MonsterratR;
+  src: url('assets/fonts/Montserrat-Regular.ttf');
+}
+
+
+.master-flats-section {
+  color: #FAF9CB;
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: #07342d;
+}
+
+.floor-section {
+  color: #FAF9CB;
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: #143C32;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  font-family: AloveraDisplayR;
+  color: #FAF9CB;
+  font-size: 50px;
+}
+
+.master-plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-family: AloveraDisplayR;
+  color: #FAF9CB;
+}
+
+.master-plan-image {
+  width: 600px;
+}
+
+.tower-tables {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tower-tables img {
+  width: 300px;
+}
+
+.flat-tabs {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.flat-tab {
+  background: none;
+  border: 2px solid #FAF9CB;
+  color: #FAF9CB;
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  margin: 5px 5px;
+  transition: all ease 0.3s;
+  font-family: MonsterratR;
+}
+
+.flat-tab.active,
+.flat-tab:hover {
+  background-color: #FAF9CB;
+  color: #143C32;
+}
+
+.flat-layout img {
+  width: 450px;
+  max-width: 90%;
+  border: 2px solid #FAF9CB;
+  margin-top: 1rem;
+}
+
+@media (max-width: 760px) {
+  .master-plan-image {
+    max-width: 100%;
+  }
+
+
+}

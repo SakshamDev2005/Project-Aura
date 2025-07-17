@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Akshar;
+  src: url('assets/fonts/Akshar-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: AloveraDisplay;
+  src: url('assets/fonts/AloeveraDisplay-Medium.otf');
+}
+
+@font-face {
+font-family: AloveraDisplayR;
+src: url('/assets/fonts/AloeveraDisplay-Regular.otf');
+}
+
+@font-face {
+font-family: AloveraDisplaySB;
+src: url('assets/fonts/AloeveraDisplay-SemiBold.otf');
+}
+
+@font-face {
+font-family: ArialBD;
+src: url('assets/fonts/arialbd.otf');
+}
+
+@font-face {
+font-family: Giarek;
+src: url('assets/fonts/Giarek-Regular.otf');
+}
+
+@font-face {
+font-family: AnekDevanagari;
+src: url('assets/fonts/AnekDevanagari-VariableFont_wdth,wght.ttf');
+}
+
+@font-face {
+font-family: MonsterratR;
+src: url('assets/fonts/Montserrat-Regular.ttf');
+}
+
+.location-section {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+background-color: #07342d;
+color: #f8f5da;
+padding: 2rem;
+gap: 2rem;
+justify-content: center;
+font-family: MonsterratR;
+}
+
+.map-container {
+flex: 1 1 400px;
+min-width: 0;
+margin: 0 10px;
+}
+
+.location-details {
+flex: 1 1 300px;
+min-width: 280px;
+}
+
+.location-details h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+font-family: ALoveraDisplayR;
+}
+
+.columns {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 2rem;
+overflow-y: scroll;
+max-height: 300px;
+padding: 10px 20px;
+}
+
+.columns > div {
+flex: 1;
+min-width: 220px;
+}
+
+.location-details h4 {
+margin-top: 1.5rem;
+margin-bottom: 0.5rem;
+font-weight: bold;
+}
+
+.location-details ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.location-details li {
+display: flex;
+justify-content: space-between;
+font-size: 0.95rem;
+padding: 0.3rem 0;
+}
+
+.location-details li span {
+font-weight: bold;
+color: #f8f5da;
+}
+
+.place {
+flex: 1 1 auto;
+/* Optionally add text-overflow: ellipsis; if names are long */
+}
+
+.time {
+flex: 0 0 auto;
+min-width: 60px; /* Adjust as needed for alignment */
+text-align: right;
+margin-left: 16px;
+}

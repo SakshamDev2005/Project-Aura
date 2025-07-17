@@ -1,0 +1,200 @@
+/* Footer CSS Code */
+
+@font-face {
+    font-family: AloveraDisplay;
+    src: url('assets/fonts/AloeveraDisplay-Medium.otf');
+}
+
+@font-face {
+  font-family: AloveraDisplayR;
+  src: url('/assets/fonts/AloeveraDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: AloveraDisplaySB;
+  src: url('assets/fonts/AloeveraDisplay-SemiBold.otf');
+}
+
+@font-face {
+  font-family: ArialBD;
+  src: url('assets/fonts/arialbd.otf');
+}
+
+@font-face {
+  font-family: Giarek;
+  src: url('assets/fonts/Giarek-Regular.otf');
+}
+
+@font-face {
+  font-family: MonsterratR;
+  src: url('assets/fonts/Montserrat-Regular.ttf');
+}
+
+/* Start of Selection */
+.footer-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+/* End of Selection */
+
+.f-logo {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 10px 20px;
+}
+
+.f-logo img {
+margin: 20px 0 0 0;
+max-width: 65%;
+}
+
+.f-text {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.f-text h4 {
+font-size: 25px;
+font-family: ArialBD;
+text-align: center;
+font-family: AloveraDisplayR;
+}
+
+.footer-bar {
+display: flex;
+align-items: flex-start;
+justify-content: space-around;
+margin: 30px 0;
+gap: 40px;
+}
+
+.footer-bar h3 {
+align-self: flex-start;
+font-family: AloveraDisplay;
+}
+
+.address {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+width: 30%;
+}
+
+.address h3 {
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.address h4 {
+font-size: 18px;
+font-family: MonsterratR;
+}
+
+/* SOcial Media Bar CSS */
+
+.social {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.social h3 {
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.social ul {
+display: flex;
+list-style: none;
+gap: 20px;
+padding: 0;
+margin: 0;
+}
+
+.social ul li {
+margin: 0;
+}
+
+.social ul li a {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 60px;
+height: 60px;
+background-color: var(--primary-color);
+color: #FAF9CA;
+border-radius: 50%;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.social ul li a:hover {
+background-color: #0f2a22;
+}
+
+
+/* MObile Responsive CSS Styling */
+
+@media (max-width: 760px) {
+
+    .footer-container {
+        display: block;
+    }
+
+    /* Start of Selection */
+    .footer .f-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .f-logo img {
+        width: 100%;
+    }
+
+    .f-text-mobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-text-mobile h4 {
+        font-size: 25px;
+        font-family: ArialBD;
+        margin: 5px 0;
+    }
+
+    .footer-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    .address {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .social {
+        padding: 0 20px;
+        align-self: flex-start;
+    }
+
+    .social ul {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 0;
+    }
+    /* End of Selection */
+
+}

@@ -1,0 +1,119 @@
+.gallery-wrapper {
+  perspective: 1200px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  position: absolute;
+  transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  opacity: 0;
+  transform: scale(0.8);
+  z-index: 1;
+}
+
+.carousel-item img {
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* Center image */
+.carousel-item.center {
+  opacity: 1;
+  transform: scale(1.1) translateZ(0);
+  z-index: 3;
+}
+
+
+
+/* Left image */
+.carousel-item.left {
+  opacity: 0.5;
+  transform: scale(0.7) translateX(-70%) rotateY(15deg);
+  z-index: 2;
+}
+
+/* Right image */
+.carousel-item.right {
+  opacity: 0.5;
+  transform: scale(0.7) translateX(70%) rotateY(-15deg);
+  z-index: 2;
+}
+
+/* Hidden images */
+.carousel-item.hidden {
+  opacity: 0;
+  transform: scale(0.7) translateX(0) translateZ(-100px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.carousel-item.far-left {
+  opacity: 0.3;
+  transform: scale(0.5) translateX(-150%) rotateY(25deg);
+  z-index: 1;
+}
+
+.carousel-item.far-right {
+  opacity: 0.4;
+  transform: scale(0.5) translateX(150%) rotateY(-25deg);
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .gallery-wrapper {
+    height: 320px;
+    padding: 0;
+  }
+  .carousel {
+    height: 100%;
+    min-height: 220px;
+  }
+  .carousel-item img, .carousel-image {
+    width: 90vw;
+    max-width: 95vw;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .carousel-item.far-left {
+    transform: scale(0.65) translateX(-70%) rotateY(10deg);
+    opacity: 0.2;
+  }
+  .carousel-item.far-right {
+    transform: scale(0.65) translateX(70%) rotateY(-10deg);
+    opacity: 0.2;
+  }
+  .carousel-item.left, .carousel-item.right {
+    transform: scale(0.85) translateX(-40%) rotateY(10deg);
+    opacity: 0.5;
+  }
+  .carousel-item.right {
+    transform: scale(0.85) translateX(40%) rotateY(-10deg);
+    opacity: 0.5;
+  }
+  .carousel-item.center {
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+    z-index: 3;
+  }
+}
+
+
+

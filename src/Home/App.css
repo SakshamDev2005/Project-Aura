@@ -1,0 +1,133 @@
+@font-face {
+  font-family: AloveraDisplay;
+  src: url('assets/fonts/AloeveraDisplay-Medium.otf');
+}
+
+@font-face {
+  font-family: AloveraDisplayR;
+  src: url('assets/fonts/AloeveraDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: AloveraDisplaySB;
+  src: url('assets/fonts/AloeveraDisplay-SemiBold.otf');
+}
+
+@font-face {
+  font-family: ArialBD;
+  src: url('assets/fonts/arialbd.otf');
+}
+
+@font-face {
+  font-family: Giarek;
+  src: url('assets/fonts/Giarek-Regular.otf');
+}
+
+@font-face {
+  font-family: MonsterratR;
+  src: url('assets/fonts/Montserrat-Regular.ttf');
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9CA;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #164735;
+  border-radius: 20px;
+  border: 2px solid #f0f0f0;
+}
+
+/* Root variables */
+:root {
+  --primary-color: #143C32;
+  --secondary-color: #FAF9CB;
+  --font-family: 'Arial', sans-serif;
+  font-family: MonsterratR, 'Montserrat', sans-serif;
+  background-color: #f8f8e1;
+}
+
+/* Global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  cursor: url('media/images/leaf-cursor-1.png'), auto;
+}
+
+
+html {
+  max-width: 100vw;
+}
+
+/* Viewport and scroll settings */
+body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Sticky navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Other sections */
+.video {
+  object-fit: cover;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  top: -180px;
+  z-index: 1;
+}
+
+.floor-plan {
+  background-color: #143C32;
+}
+
+.gallery h2 {
+  font-family: AloveraDisplayR;
+  color: #143C32;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 25px;
+}
+
+.form-page {
+  background-color: #143C32;
+}
+
+.footer {
+  color: black;
+}
+
+/* Mobile fixes */
+@media (max-width: 1285px) {
+
+  html, body {
+    max-width: 100vw;
+    overflow-x: clip !important;
+    position: relative;
+  }
+
+  .video {
+    object-fit: contain;
+    top: 0;
+  }
+}
