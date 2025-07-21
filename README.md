@@ -42,8 +42,8 @@ This project is a highly aesthetic landing page designed for **Vanshdeep Group**
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/vanshdeep-landing.git
-cd vanshdeep-landing
+git clone https://github.com/SakshamDev2005/Project-Aura.git
+cd project-aura
 ```
 
 ### 2. Install Dependencies
