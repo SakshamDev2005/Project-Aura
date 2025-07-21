@@ -81,3 +81,4 @@ Your project will be available at `http://localhost:5173` if using Vite.
 - **Tailwind CSS**
 - **CountUp.js**
 - **Vite**
+- **GSAP**
