@@ -1,12 +1,83 @@
-# React + Vite
+## 🌿 Real Estate Landing Page – Vanshdeep Group
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a highly aesthetic landing page designed for **Vanshdeep Group**, a real estate company. Built using React, the page delivers smooth transitions, detailed project sections, and a visually striking presentation for showcasing residential properties.
 
-Currently, two official plugins are available:
+### 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Visit Live Site](https://your-deployment-url.com)  
+> _Replace this with the actual URL of your deployed site (Netlify, Vercel, etc.)_
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+```
+/public
+  └── media/
+      └── images/
+      └── videos/
+  └── assets/fonts/
+
+/src
+  ├── App.jsx
+  ├── App.css
+  ├── index.css
+  ├── main.jsx
+  ├── About.jsx
+  ├── About.css
+  ├── Home.jsx
+  ├── Tower.jsx
+  ├── Floor.jsx
+  ├── Gallery.jsx
+  ├── Location.jsx
+  ├── Form.jsx
+  ├── Footer.jsx
+  └── Navbar.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/vanshdeep-landing.git
+cd vanshdeep-landing
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Your project will be available at `http://localhost:5173` if using Vite.
+
+---
+
+## 🔧 Features
+
+- ⏳ Loading screen animation
+- 🎥 Fullscreen video background
+- 🏢 Tower, Floor Plans, Gallery & About sections
+- 💬 Sticky Form Section
+- 🧭 AOS Animations on Scroll
+- 📱 Fully responsive and mobile-friendly layout
+- 🎨 Custom fonts and themed color palette
+
+---
+
+## 🛠️ Built With
+
+- **ReactJS**
+- **AOS (Animate On Scroll)**
+- **Tailwind CSS**
+- **CountUp.js**
+- **Vite**
