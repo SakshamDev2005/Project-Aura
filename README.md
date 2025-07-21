@@ -4,7 +4,7 @@ This project is a highly aesthetic landing page designed for **Vanshdeep Group**
 
 ### 🔗 Live Demo
 
-👉 [Visit Live Site](https://your-deployment-url.com)  
+👉 [Visit Live Site](https://the-aura-project.netlify.app/)
 > _Replace this with the actual URL of your deployed site (Netlify, Vercel, etc.)_
 
 ---
