@@ -1,0 +1,2 @@
+# This file ensures GitHub Pages serves built/static files as-is
+# and does not run Jekyll processing.
